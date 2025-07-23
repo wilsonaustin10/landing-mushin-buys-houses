@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function AboutPage() {
@@ -12,13 +11,15 @@ export default function AboutPage() {
         
         <div className="bg-white p-8 rounded-lg shadow-lg space-y-6">
           <div className="flex justify-center mb-8">
-            <Image
-              src="/logoplaceholder.png"
-              alt="Mushin Buys Houses"
-              width={300}
-              height={80}
-              className="mb-6"
-            />
+            <div className="flex items-center space-x-3">
+              <div className="bg-primary text-white px-6 py-4 rounded-lg font-bold text-3xl">
+                MBH
+              </div>
+              <div className="flex flex-col">
+                <span className="text-3xl font-bold text-primary">Mushin Buys Houses</span>
+                <span className="text-lg text-gray-600">Cash Home Buyers</span>
+              </div>
+            </div>
           </div>
           
           <h2 className="text-2xl font-semibold text-primary mb-4">Our Mission</h2>

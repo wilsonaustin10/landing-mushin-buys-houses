@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { Phone, Mail } from 'lucide-react';
-import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -10,14 +9,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center">
-              <Image
-                src={process.env.NEXT_PUBLIC_LOGO_URL || "/logoplaceholder.png"}
-                alt={process.env.NEXT_PUBLIC_COMPANY_NAME || "Mushin Buys Houses"}
-                width={120}
-                height={40}
-                className="mr-2"
-              />
+            <div className="flex items-center space-x-2">
+              <div className="bg-white text-primary px-3 py-2 rounded-lg font-bold text-lg">
+                MBH
+              </div>
+              <span className="text-xl font-bold text-white">Mushin Buys Houses</span>
             </div>
             <p className="text-gray-300">
               We buy houses in any condition. Get your fair cash offer today.

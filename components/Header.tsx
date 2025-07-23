@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Header() {
@@ -9,16 +8,14 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <div className="relative w-auto h-auto">
-              <Image
-                src={process.env.NEXT_PUBLIC_LOGO_URL || "/logoplaceholder.png"}
-                alt={process.env.NEXT_PUBLIC_COMPANY_NAME || "Mushin Buys Houses"}
-                width={150}
-                height={40}
-                style={{ objectFit: 'contain' }}
-                priority
-                className="hover:opacity-90 transition-opacity"
-              />
+            <div className="flex items-center space-x-2">
+              <div className="bg-primary text-white px-3 py-2 rounded-lg font-bold text-xl">
+                MBH
+              </div>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold text-primary">Mushin Buys Houses</span>
+                <span className="text-xs text-gray-600">Cash Home Buyers</span>
+              </div>
             </div>
           </Link>
           <nav className="hidden md:flex space-x-8">
