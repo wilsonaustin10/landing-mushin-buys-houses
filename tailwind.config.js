@@ -8,16 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '{{primaryColor}}',
-        secondary: '{{secondaryColor}}',
+        primary: '#1E40AF', // Blue - replace with your brand color
+        secondary: '#10B981', // Green - replace with your secondary color
         accent: '#000000', // COMPANY ACCENT COLOR PLACEHOLDER
         highlight: '#000000', // COMPANY HIGHLIGHT COLOR PLACEHOLDER
         background: '#ffffff', // White
         text: '#333333', // Dark gray for regular text
         footer: {
-          bg: '{{primaryColor}}',
+          bg: '#1E40AF', // Same as primary
           text: '#ffffff', // White
-          hover: '{{secondaryColor}}',
+          hover: '#10B981', // Same as secondary
         }
       },
     },

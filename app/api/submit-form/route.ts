@@ -93,7 +93,7 @@ export async function POST(request: Request) {
     console.log('Received complete form submission request');
 
     // 1. Rate limiting check
-    const headersList = headers();
+    const headersList = await headers();
     const ip = headersList.get('x-forwarded-for') || 'unknown';
     const timestamp = new Date().toISOString();
     

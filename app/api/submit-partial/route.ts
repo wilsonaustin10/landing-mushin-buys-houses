@@ -76,7 +76,7 @@ export async function POST(request: Request) {
     // Log incoming request
     console.log('Received partial form submission request');
 
-    const headersList = headers();
+    const headersList = await headers();
     const ip = headersList.get('x-forwarded-for') || 'unknown';
     
     // Apply rate limiting

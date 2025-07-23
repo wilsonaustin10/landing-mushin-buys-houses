@@ -6,11 +6,11 @@ import type { Metadata } from 'next';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: '{{COMPANY_NAME}} - Sell Your House Fast',
-  description: 'Get a fair cash offer for your house in {{CITY}}. No repairs, no commissions, close on your timeline.',
-  keywords: 'sell house fast, cash home buyers, {{CITY}} home buyers, sell my house',
+  title: 'Mushin Buys Houses - Sell Your House Fast',
+  description: 'Get a fair cash offer for your house in Your City. No repairs, no commissions, close on your timeline.',
+  keywords: 'sell house fast, cash home buyers, Your City home buyers, sell my house',
   openGraph: {
-    title: '{{COMPANY_NAME}} - Sell Your House Fast in {{CITY}}',
+    title: 'Mushin Buys Houses - Sell Your House Fast in Your City',
     description: 'Get a fair cash offer for your house. No repairs, no commissions.',
     type: 'website',
   },
